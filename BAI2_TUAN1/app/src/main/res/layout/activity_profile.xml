@@ -158,7 +158,7 @@
             android:layout_marginLeft="20dp"
             android:layout_weight="1"
             android:gravity="left|center"
-            android:text="Phone:  0123658974"
+            android:text="Mã sinh viên:  0123658974"
             android:textColor="@color/black"
             android:textSize="17dp" />
 
