@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/image_hinh"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/TenQG"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image_hinh"
+        android:text="Tên Quốc Gia"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/Danso"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TenQG"
+        android:layout_toRightOf="@id/image_hinh"
+        android:text="Dân số"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/mota"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mô tả"
+        android:layout_below="@id/Danso"
+        android:layout_toRightOf="@id/image_hinh"/>
+</RelativeLayout>
