@@ -20,7 +20,7 @@
         android:ems="10"
         android:textColorHint="#D1D1D1"
         android:hint="Enter your password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:textSize="17dp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"

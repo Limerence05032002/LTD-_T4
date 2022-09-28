@@ -3,14 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Download/File nghe/Kimtragiak/app/src/main/res/drawable/abc.xml" value="0.221" />
+        <entry key="..\:/Download/File nghe/Kimtragiak/app/src/main/res/drawable/avata.xml" value="0.221" />
         <entry key="..\:/Download/File nghe/Kimtragiak/app/src/main/res/drawable/button_cus1.xml" value="0.2115" />
+        <entry key="..\:/Download/File nghe/Kimtragiak/app/src/main/res/drawable/detail.xml" value="0.223" />
         <entry key="..\:/Download/File nghe/Kimtragiak/app/src/main/res/drawable/edittext.xml" value="0.2115" />
         <entry key="..\:/Download/File nghe/Kimtragiak/app/src/main/res/drawable/oval.xml" value="0.2115" />
         <entry key="..\:/Download/File nghe/Kimtragiak/app/src/main/res/drawable/radius.xml" value="0.2115" />
+        <entry key="..\:/Download/File nghe/Kimtragiak/app/src/main/res/layout/activity_detail.xml" value="0.1" />
         <entry key="..\:/Download/File nghe/Kimtragiak/app/src/main/res/layout/activity_login.xml" value="0.27447916666666666" />
         <entry key="..\:/Download/File nghe/Kimtragiak/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
-        <entry key="..\:/Download/File nghe/Kimtragiak/app/src/main/res/layout/activity_menu.xml" value="0.264" />
-        <entry key="..\:/Download/File nghe/Kimtragiak/app/src/main/res/layout/activity_register.xml" value="0.27447916666666666" />
+        <entry key="..\:/Download/File nghe/Kimtragiak/app/src/main/res/layout/activity_menu.xml" value="0.4" />
+        <entry key="..\:/Download/File nghe/Kimtragiak/app/src/main/res/layout/activity_profile.xml" value="0.27447916666666666" />
+        <entry key="..\:/Download/File nghe/Kimtragiak/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/Download/File nghe/Kimtragiak/app/src/main/res/layout/item_category.xml" value="0.27447916666666666" />
         <entry key="..\:/Download/File nghe/Kimtragiak/app/src/main/res/layout/item_food.xml" value="0.264" />
       </map>
