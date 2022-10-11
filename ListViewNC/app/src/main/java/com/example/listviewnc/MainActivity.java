@@ -1,49 +1,45 @@
 package com.example.listviewnc;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    ListView lvQuocGia;
-    ArrayList<QuocGia> quocGiaArray;
-    quocGiaAdapter adapter;
+    private RecyclerView rcvCAtegory;
+    private CategoryAdapter categoryAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
-        anhxa();
-        adapter = new quocGiaAdapter(this, R.layout.dong_qoucgia, quocGiaArray);
-        lvQuocGia.setAdapter(adapter);
+
+        rcvCAtegory = findViewById(R.id.rcv_category);
+        categoryAdapter = new CategoryAdapter(this);
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
+        rcvCAtegory.setLayoutManager(linearLayoutManager);
+
+        categoryAdapter.setData(getListCategory());
+        rcvCAtegory.setAdapter(categoryAdapter);
     }
 
-    private void anhxa() {
-        lvQuocGia = findViewById(R.id.list_View_QG);
-        quocGiaArray = new ArrayList<>();
+    private List<Category> getListCategory() {
+        List<Category> listCategory = new ArrayList<>();
 
-        quocGiaArray.add(new QuocGia("Việt Nam","Quốc gia chữ S", R.drawable.vietnam));
-        quocGiaArray.add(new QuocGia("Trung Quốc","Quốc gia dân số", R.drawable.trung));
-        quocGiaArray.add(new QuocGia("Lào","Quốc gia hàng xóm", R.drawable.lao));
-        quocGiaArray.add(new QuocGia("Campuchia","Quốc gia láng giềng", R.drawable.cam));
-        quocGiaArray.add(new QuocGia("Thái Lan","Sử sở triệu voi", R.drawable.thai));
-        quocGiaArray.add(new QuocGia("Việt Nam","Quốc gia chữ S", R.drawable.vietnam));
-        quocGiaArray.add(new QuocGia("Trung Quốc","Quốc gia dân số", R.drawable.trung));
-        quocGiaArray.add(new QuocGia("Lào","Quốc gia hàng xóm", R.drawable.lao));
-        quocGiaArray.add(new QuocGia("Campuchia","Quốc gia láng giềng", R.drawable.cam));
-        quocGiaArray.add(new QuocGia("Thái Lan","Sử sở triệu voi", R.drawable.thai));
-        quocGiaArray.add(new QuocGia("Việt Nam","Quốc gia chữ S", R.drawable.vietnam));
-        quocGiaArray.add(new QuocGia("Trung Quốc","Quốc gia dân số", R.drawable.trung));
-        quocGiaArray.add(new QuocGia("Lào","Quốc gia hàng xóm", R.drawable.lao));
-        quocGiaArray.add(new QuocGia("Campuchia","Quốc gia láng giềng", R.drawable.cam));
-        quocGiaArray.add(new QuocGia("Thái Lan","Sử sở triệu voi", R.drawable.thai));
-        quocGiaArray.add(new QuocGia("Việt Nam","Quốc gia chữ S", R.drawable.vietnam));
-        quocGiaArray.add(new QuocGia("Trung Quốc","Quốc gia dân số", R.drawable.trung));
-        quocGiaArray.add(new QuocGia("Lào","Quốc gia hàng xóm", R.drawable.lao));
-        quocGiaArray.add(new QuocGia("Campuchia","Quốc gia láng giềng", R.drawable.cam));
-        quocGiaArray.add(new QuocGia("Thái Lan","Sử sở triệu voi", R.drawable.thai));
+        List<Food> listFood = new ArrayList<>();
+        listFood.add(new Food(R.drawable.headset,"Beef Steak"));
+        listFood.add(new Food(R.drawable.skateboard,"Ghẹ hấp củ"));
+
+
+        listCategory.add(new Category("Popular foods", listFood));
+
+
+        return listCategory;
     }
 }

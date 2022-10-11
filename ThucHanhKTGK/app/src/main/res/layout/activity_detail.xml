@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail">
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="535dp"
+        android:text="@string/app_name"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="359dp"
+        android:layout_height="480dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="285dp"
+        android:background="@drawable/detail"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Nui lốc xoáy"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:id="@+id/star1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star" />
+
+            <ImageView
+                android:id="@+id/star2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/star" />
+
+            <ImageView
+                android:id="@+id/star3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/star" />
+
+            <ImageView
+                android:id="@+id/star4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="75dp"
+                android:src="@drawable/star" />
+
+            <ImageView
+                android:id="@+id/star5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/star" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mota_food"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Nui là 1 từ tiếng Việt để chỉ các loại sợi mì có nguồn gốc từ phương Tây. Các loại nui phổ biến ở Việt Nam hiện nay là dạng mì ống, hình xoắn ... "
+            android:textColor="#606060"
+            android:textSize="16sp"
+            app:lineHeight="25dp" />
+
+        <TextView
+            android:id="@+id/nl_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Năng lượng:  650 calo"
+            android:textColor="#606060" />
+
+        <TextView
+            android:id="@+id/calo_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Calories:  130 - 150cal/100g"
+            android:textColor="#606060" />
+
+        <TextView
+            android:id="@+id/dd_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Dinh dưỡng:  Protein, canxi, sắt, chất xơ, ..."
+            android:textColor="#606060" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giá:"
+                android:textColor="#606060" />
+
+            <TextView
+                android:id="@+id/gia_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:text="150,000 VND"
+                android:textColor="#606060" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="35dp"
+            android:text="Add to cart" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:backgroundTint="@color/white"
+        android:text="Back"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>
